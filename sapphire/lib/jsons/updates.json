@@ -1,0 +1,112 @@
+[
+  {
+    "timestamp": 1698927908000,
+    "whatsNew": [
+      "Code Redemption",
+      "Sign-in with Solana Wallet",
+      "Prompts on explore generations"
+    ],
+    "issuesFixed": [
+      "Public generation updates",
+      "Wallet sign in allows multiple wallet connections",
+      "Generation Editing"
+    ]
+  },
+  {
+    "timestamp": 1699565470000,
+    "whatsNew": [
+      "Dalle-3!",
+      "News and Updates",
+      "Leonardo AI cost increase by 2 sapphires"
+    ],
+    "comingSoon": ["Auctions", "Improved Sign-in Flow"],
+    "issuesFixed": [
+      "Save images as jpg/png when downloading based on return type."
+    ]
+  },
+  {
+    "timestamp": 1699652016000,
+    "whatsNew": ["Improved Login Flow!", "FAQs page"],
+    "comingSoon": [
+      "Auctions",
+      "cNFT and pNFT support",
+      "Edit your Sapphire created NFTs",
+      "Manage Collections"
+    ],
+    "issuesFixed": []
+  },
+  {
+    "timestamp": 1699912212000,
+    "whatsNew": [
+      "Mint Standard, cNFT or pNFTs!",
+      "Make your generations mintable by others!",
+      "Receive royalties on sales of cNFTs minted via the Explore page and 0.001 SOL for each mint!"
+    ],
+    "comingSoon": [
+      "Auctions",
+      "Edit your Sapphire created NFTs",
+      "Manage Collections"
+    ],
+    "issuesFixed": []
+  },
+  {
+    "timestamp": 1700181668000,
+    "whatsNew": [
+      "Burn Standard and pNFTs for Sapphires and receive sol back!",
+      "Swap your spl tokens for sapphires!"
+    ],
+    "comingSoon": [
+      "Auctions",
+      "Edit your Sapphire created NFTs",
+      "Manage Collections"
+    ],
+    "issuesFixed": [
+      "Update user generation within the edit menu.",
+      "Add indexing to generation searches"
+    ]
+  },
+  {
+    "timestamp": 1700526175000,
+    "whatsNew": [
+      "Filter Explore by Mintable and Generation Engine",
+      "Sort Explore by Newest, Oldest, Most Like and Least Liked"
+    ],
+    "comingSoon": ["Auctions on final devnet tests"],
+    "issuesFixed": []
+  },
+  {
+    "timestamp": 1702147358000,
+    "whatsNew": [
+      "Tip Creators in Sapphires or Sol",
+      "Speech Recognition for Prompting",
+      "Auction program has been deployed on Mainnet"
+    ],
+    "comingSoon": ["Auctions on final mainnet tests"],
+    "issuesFixed": []
+  },
+  {
+    "timestamp": 1702871109000,
+    "whatsNew": ["Updated Token List for Swapping"],
+    "comingSoon": ["Top secret super duper cool stuff"],
+    "issuesFixed": []
+  },
+  {
+    "timestamp": 1702935909000,
+    "whatsNew": ["Purchase Sapphires in BONK, GECKO, WIF and SHDW"],
+    "comingSoon": ["Top secret super duper cool stuff"],
+    "issuesFixed": []
+  },
+  {
+    "timestamp": 1701458340000,
+    "whatsNew": [
+      "Improve image loading speed",
+      "Auctions program deployed to mainnet"
+    ],
+    "comingSoon": ["Auctions on final mainnet tests"],
+    "issuesFixed": [
+      "Optimize image loading speed",
+      "Reduce Bundle Sizes",
+      "Remove duplicate calls"
+    ]
+  }
+]

@@ -1,0 +1,222 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@font-face {
+  font-family: Casper;
+  src: url("/fonts/Casper.ttf");
+}
+
+@layer base {
+  :root {
+    --background: 210 40% 98%;
+    --foreground: 229 84% 5%;
+
+    --muted: 213 27% 84%;
+    --muted-foreground: 215 19% 35%;
+
+    --primary: 212 100% 47%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 213 27% 84%;
+    --secondary-foreground: 229 84% 5%;
+
+    --accent: 213 27% 84%;
+    --accent-foreground: 229 84% 5%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 210 40% 98%;
+
+    --card: 210 40% 96%;
+    --card-foreground: 222.2 80% 6%;
+
+    --popover: 210 40% 96%;
+    --popover-foreground: 222.2 80% 6%;
+
+    --border: 213 27% 84%;
+    --input: 213 27% 84%;
+    --ring: 212.7 26.8% 83.9%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 229 84% 5%;
+    --foreground: 210 40% 98%;
+
+    --muted: 217 33% 17%;
+    --muted-foreground: 215 20% 65%;
+
+    --primary: 212 100% 47%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 217 33% 17%;
+    --secondary-foreground: 210 40% 98%;
+
+    --accent: 217 33% 17%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 210 40% 98%;
+
+    --card: 222.2 80% 6%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 80% 6%;
+    --popover-foreground: 210 40% 98%;
+
+    --border: 217 33% 17%;
+    --input: 217 33% 17%;
+    --ring: 212.7 26.8% 83.9%;
+  }
+  * {
+    @apply border-border;
+  }
+  html {
+    @apply scroll-smooth;
+  }
+  body {
+    @apply min-h-screen scroll-smooth bg-background text-foreground text-sm;
+  }
+  h1 {
+    @apply sm:text-4xl text-3xl font-bold;
+  }
+  h2 {
+    @apply sm:text-3xl text-2xl font-bold;
+  }
+  h3 {
+    @apply text-xl font-bold;
+  }
+  h4 {
+    @apply text-lg font-bold;
+  }
+  ::-webkit-scrollbar {
+    @apply h-2 w-2;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-muted;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-muted-foreground rounded-full;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-foreground;
+  }
+}
+
+.wallet-adapter-modal-overlay {
+  z-index: 60;
+}
+.wallet-adapter-modal-wrapper {
+  z-index: 100;
+  pointer-events: all;
+}
+.wallet-adapter-modal {
+  z-index: 70;
+}
+.wallet-adapter-modal-container {
+  z-index: 70;
+}
+
+.wallet-adapter-modal-wrapper {
+  background-image: url("/images/modal_bg.webp") !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  font-family: Casper !important;
+}
+.css-1anqmj6-MuiPopper-root-MuiPickersPopper-root {
+  z-index: 60 !important;
+  pointer-events: all !important;
+}
+
+.css-z3c6am-MuiFormControl-root-MuiTextField-root {
+  border: hsl(var(--border)) solid 1px !important;
+}
+
+.css-o9k5xi-MuiInputBase-root-MuiOutlinedInput-root {
+  color: white !important;
+  --tw-ring-color: white !important;
+}
+.css-o9k5xi-MuiInputBase-root-MuiOutlinedInput-root.Mui-focused
+  .MuiOutlinedInput-notchedOutline {
+  border: 1px solid white !important;
+}
+
+.css-1mtsuo7 {
+  z-index: 60 !important;
+  pointer-events: all !important;
+  background: hsl(var(--background)) !important;
+  color: hsl(var(--foreground)) !important;
+}
+.css-1r39cda {
+  background: hsl(var(--background)) !important;
+  color: hsl(var(--foreground)) !important;
+}
+.css-ds5dkt {
+  background: hsl(var(--background)) !important;
+  color: hsl(var(--foreground)) !important;
+}
+.css-10qkmc3 {
+  color: hsl(var(--foreground)) !important;
+}
+.css-6exafu {
+  color: hsl(var(--foreground)) !important;
+}
+.css-w0pj6f:hover {
+  background: hsl(var(--accent)) !important;
+}
+.css-1ox9k5z:hover {
+  background: hsl(var(--accent)) !important;
+}
+.css-71vzt-MuiPaper-root-MuiPickersPopper-paper {
+  background: hsl(var(--background)) !important;
+  color: hsl(var(--foreground)) !important;
+}
+.css-71vzt-MuiPaper-root-MuiPickersPopper-paper {
+  color: hsl(var(--foreground)) !important;
+}
+
+.css-1u23akw-MuiButtonBase-root-MuiPickersDay-root {
+  color: hsl(var(--foreground)) !important;
+}
+/*
+.css-1u23akw-MuiButtonBase-root-MuiPickersDay-root:hover {
+  background-color: hsl(var(--secondary)) !important;
+}
+.css-12mkn7b-MuiButtonBase-root-MuiIconButton-root-MuiPickersCalendarHeader-switchViewButton {
+  color: hsl(var(--foreground)) !important;
+}
+.css-1vooibu-MuiSvgIcon-root {
+  color: hsl(var(--foreground)) !important;
+}
+.css-1nkg345-MuiButtonBase-root-MuiIconButton-root-MuiPickersArrowSwitcher-button {
+  color: hsl(var(--foreground)) !important;
+}
+.css-i5q14k-MuiDayCalendar-header {
+  color: hsl(var(--foreground)) !important;
+}*/
+.css-rhmlg1-MuiTypography-root-MuiDayCalendar-weekDayLabel {
+  color: hsl(var(--foreground)) !important;
+}
+.css-1u23akw-MuiButtonBase-root-MuiPickersDay-root.Mui-disabled {
+  color: hsl(var(--accent)) !important;
+}
+@keyframes pop {
+  0% {
+    scale: 0;
+    opacity: 0;
+    transform: rotate(0);
+  }
+  10%,
+  70% {
+    scale: 1;
+    opacity: 1;
+    transform: rotate(0.25turn);
+  }
+  80% {
+    scale: 0;
+    opacity: 0;
+    transform: rotate(0.5turn);
+  }
+}

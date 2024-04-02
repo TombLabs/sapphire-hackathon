@@ -1,0 +1,40 @@
+{
+  "name": "sapphire-bot",
+  "version": "1.0.0",
+  "description": "A discord bot to interact with the Sapphire System",
+  "main": "index.js",
+  "scripts": {
+    "start": "node build/index.js",
+    "nodemon": "nodemon ./src/index.ts",
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "Tomb Labs",
+  "license": "MIT",
+  "dependencies": {
+    "@discordjs/rest": "^2.0.1",
+    "@improbable-eng/grpc-web": "^0.15.0",
+    "@leonardo-ai/sdk": "^1.61.1",
+    "@metaplex-foundation/js": "^0.19.5",
+    "@metaplex-foundation/js-plugin-nft-storage": "^0.19.5",
+    "@solana/web3.js": "^1.87.1",
+    "@types/mongoose": "^5.11.97",
+    "@types/node": "^18.7.14",
+    "axios": "^1.5.1",
+    "bs58": "^5.0.0",
+    "chalk": "^4.1.2",
+    "discord.js": "14.10.2",
+    "dotenv": "^16.3.1",
+    "google-protobuf": "^3.21.2",
+    "mongoose": "^6.5.4",
+    "nft.storage": "^7.1.1",
+    "nodemon": "^3.0.1",
+    "openai": "^4.11.1",
+    "sharp": "^0.32.6",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.8.2"
+  },
+  "overrides": {
+    "discord-api-types": "0.37.20"
+  }
+}

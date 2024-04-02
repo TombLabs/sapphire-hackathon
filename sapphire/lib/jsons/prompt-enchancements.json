@@ -1,0 +1,162 @@
+[
+  {
+    "label": "Hyper Realism",
+    "value": ", hyper realism",
+    "description": "A style of art that emphasizes extreme realism and detail to create images that resemble photographs."
+  },
+  {
+    "label": "Octane Render",
+    "value": ", octane render",
+    "description": "A high-performance rendering engine that utilizes the power of a graphics card to quickly produce high-quality images."
+  },
+  {
+    "label": "RTX",
+    "value": ", RTX",
+    "description": "A ray-tracing technology that enhances the realism of lighting, shadows, and reflections in 3D graphics."
+  },
+  {
+    "label": "DLSS",
+    "value": ", DLSS",
+    "description": "A technology that uses deep learning to improve the performance of real-time rendering applications, such as video games, while maintaining high image quality."
+  },
+  {
+    "label": "Ray Tracing",
+    "value": ", ray tracing",
+    "description": "A rendering technique that simulates the behavior of light in a virtual environment to create realistic lighting, shadows, and reflections."
+  },
+  {
+    "label": "Volumetric Lighting",
+    "value": ", Dynamic, volumetric lighting",
+    "description": "Lighting effects that create the illusion of depth and volume in a 3D environment."
+  },
+  {
+    "label": "Cinematic Lighting",
+    "value": ", cinematic lighting",
+    "description": "Lighting techniques used in film and video production to create dramatic and visually stunning images"
+  },
+  {
+    "label": "4K",
+    "value": ", 4K",
+    "description": "A resolution of 3840x2160 pixels, which is four times the resolution of 1080p Full HD."
+  },
+  {
+    "label": "8K",
+    "value": ", 8K",
+    "description": "A resolution of 7680x4320 pixels, which is four times the resolution of 4K Ultra HD."
+  },
+  {
+    "label": "HBAO",
+    "value": ", HBAO",
+    "description": "Horizon-Based Ambient Occlusion, a rendering technique used to create more realistic shadows in a 3D environment."
+  },
+  {
+    "label": "HDR",
+    "value": ", HDR",
+    "description": "High Dynamic Range, a technology used to capture and display a wider range of brightness and color in images and videos."
+  },
+  {
+    "label": "Lumion Render",
+    "value": ", lumion render",
+    "description": "A real-time 3D visualization software used in architecture, engineering, and construction industries to create high-quality renderings and visualizations of designs."
+  },
+  {
+    "label": "High Resolution",
+    "value": ", high resolution",
+    "description": "The output image will have a high pixel count for sharp and clear details."
+  },
+  {
+    "label": "Vibrant Colors",
+    "value": ", vibrant colors",
+    "description": "The output image will have bright and bold colors for a more eye-catching look."
+  },
+  {
+    "label": "Detailed Texture",
+    "value": ", detailed texture",
+    "description": "The output image will have intricate and varied textures for a more tactile appearance."
+  },
+  {
+    "label": "Realistic Lighting",
+    "value": ", realistic lighting",
+    "description": "The output image will have lighting that accurately simulates real-world lighting conditions."
+  },
+  {
+    "label": "Dynamic Composition",
+    "value": ", dynamic composition",
+    "description": "The output image will have an engaging and dynamic arrangement of visual elements."
+  },
+  {
+    "label": "Dramatic Contrast",
+    "value": ", dramatic contrast",
+    "description": "The output image will have high contrast between light and dark areas for a bold and dramatic effect."
+  },
+  {
+    "label": "Symmetrical Design",
+    "value": ", symmetrical design",
+    "description": "The image will have symmetrical balance and a harmonious arrangement of visual elements."
+  },
+  {
+    "label": "Abstract Shapes",
+    "value": ", abstract shapes",
+    "description": "The output image will feature non-representational shapes for a more experimental and imaginative look."
+  },
+  {
+    "label": "Whimsical Elements",
+    "value": ", whimsical elements",
+    "description": "The output image will have playful and imaginative elements for a more lighthearted and fun look."
+  },
+  {
+    "label": "Minimalist Aesthetic",
+    "value": ", minimalist aesthetic",
+    "description": "The output image will have a clean and simple design for a more modern and sophisticated look."
+  },
+  {
+    "label": "Organic Form",
+    "value": ", organic form",
+    "description": "The image will feature shapes and forms found in nature for an earthy and natural feel."
+  },
+  {
+    "label": "Geometric Patterns",
+    "value": ", geometric patterns",
+    "description": "The output image will feature geometric shapes and patterns for a more structured and orderly look."
+  },
+  {
+    "label": "Emotional Tone",
+    "value": ", emotional tone",
+    "description": "The image will convey a specific emotion or mood through its visual elements and color palette."
+  },
+  {
+    "label": "Nostalgic Vibe",
+    "value": ", nostalgic vibe",
+    "description": "The output image will have a vintage or retro feel for a sense of nostalgia and warmth."
+  },
+  {
+    "label": "Futuristic Elements",
+    "value": ", futuristic elements",
+    "description": "The image will incorporate futuristic elements and technology for a futuristic and forward-thinking look."
+  },
+  {
+    "label": "Bold Lines",
+    "value": ", bold lines",
+    "description": "The image will have strong and bold lines for a more graphic and striking look."
+  },
+  {
+    "label": "Soft Pastel Colors",
+    "value": ", soft pastel colors",
+    "description": "The image will have a soft and muted color palette for a more delicate and subtle look."
+  },
+  {
+    "label": "Harmonious Color Scheme",
+    "value": ", harmonious color scheme",
+    "description": "The image will have a color scheme that is pleasing to the eye and creates a sense of harmony."
+  },
+  {
+    "label": "Surrealistic Elements",
+    "value": ", surrealistic elements",
+    "description": "The image will have elements that are dreamlike and strange for a more surreal and imaginative look."
+  },
+  {
+    "label": "Dreamlike Atmosphere",
+    "value": ", dreamlike atmosphere",
+    "description": "The output image will have a soft and ethereal quality for a dreamy and otherworldly feel"
+  }
+]

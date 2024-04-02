@@ -1,0 +1,194 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider     = "mysql"
+  url          = env("PSCALE_DATABASE_URL")
+  relationMode = "prisma"
+}
+
+model User {
+  id              String       @id @default(cuid())
+  email           String       @unique
+  name            String       @unique
+  image           String
+  banner          String?
+  bio             String?
+  handle          String?      @unique
+  sapphires       Int          @default(100)
+  role            String       @default("user")
+  createdAt       DateTime     @default(now())
+  updatedAt       DateTime     @updatedAt
+  deletedAt       DateTime?
+  featured        Boolean      @default(false)
+  wallets         Wallet[]
+  purchases       Purchase[]
+  generations     Generation[]
+  likesGiven      Like[]
+  accounts        Account[]
+  claimedVouchers Voucher[]
+  sessions        Session[]
+
+  @@map("users")
+}
+
+model Generation {
+  id             String    @id @default(cuid())
+  name           String?
+  image          String    @db.Text
+  prompt         String    @db.Text
+  src            String?   @db.Text
+  height         Int?
+  width          Int?
+  img2Img        Boolean
+  referenceImage String?   @db.Text
+  promptAssist   Boolean
+  sapphireCost   Int
+  isPublic       Boolean   @default(false)
+  aiEngine       String
+  isMintable     Boolean
+  userId         String
+  createdAt      DateTime  @default(now())
+  featured       Boolean   @default(false)
+  deletedAt      DateTime?
+  likesRecieved  Like[]
+  user           User      @relation(fields: [userId], references: [id])
+
+  @@index([userId])
+}
+
+model Account {
+  id                String  @id @default(cuid())
+  userId            String
+  type              String
+  provider          String
+  providerAccountId String  @map("provider_account_id")
+  refresh_token     String? @db.Text
+  access_token      String? @db.Text
+  expires_at        Int?
+  token_type        String?
+  scope             String?
+  id_token          String? @db.Text
+  session_state     String?
+  user              User    @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([provider, providerAccountId])
+  @@index([userId])
+  @@map("accounts")
+}
+
+model VerificationToken {
+  identifier String
+  token      String   @unique
+  expires    DateTime
+
+  @@unique([identifier, token])
+}
+
+model Session {
+  id           String   @id @default(cuid())
+  sessionToken String   @unique
+  userId       String
+  expires      DateTime
+  user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+}
+
+model Voucher {
+  id        String    @id @default(cuid())
+  code      String    @unique
+  sapphires Int
+  supply    Int
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+  deletedAt DateTime?
+  expiresAt DateTime
+  claimedBy User[]
+}
+
+model NftMints {
+  id        String    @id @default(cuid())
+  mint      String    @unique
+  wallet    String
+  image     String
+  type      String
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+  deletedAt DateTime?
+}
+
+model PastAuctions {
+  id        String    @id @default(cuid())
+  auctionId String    @unique
+  winner    String
+  creator   String
+  totalBids Int
+  price     Int
+  image     String
+  name      String
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+  deletedAt DateTime?
+}
+
+model Purchase {
+  id           String    @id @default(cuid())
+  userId       String
+  packageId    String
+  transaction  String?
+  createdAt    DateTime  @default(now())
+  updatedAt    DateTime  @updatedAt
+  deletedAt    DateTime?
+  user         User      @relation(fields: [userId], references: [id])
+  package      Packages  @relation(fields: [packageId], references: [id])
+  paymentToken String
+
+  @@index([userId])
+  @@index([packageId])
+}
+
+model Packages {
+  id          String     @id @default(cuid())
+  name        String     @unique
+  priceUSD    Int
+  sapphires   Int
+  description String
+  purchases   Purchase[]
+}
+
+model Wallet {
+  id        String    @id @default(cuid())
+  address   String    @unique
+  userId    String
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+  deletedAt DateTime?
+  user      User      @relation(fields: [userId], references: [id])
+
+  @@index([userId])
+}
+
+model Like {
+  id           String     @id @default(cuid())
+  likerId      String
+  generationId String
+  createdAt    DateTime   @default(now())
+  updatedAt    DateTime   @updatedAt
+  deletedAt    DateTime?
+  liker        User       @relation(fields: [likerId], references: [id])
+  generation   Generation @relation(fields: [generationId], references: [id])
+
+  @@index([likerId])
+  @@index([generationId])
+}
+
+model UserToVoucher {
+  A Int
+  B Int
+
+  @@unique([A, B], map: "_UserToVoucher_AB_unique")
+  @@index([B], map: "_UserToVoucher_B_index")
+  @@map("_UserToVoucher")
+}

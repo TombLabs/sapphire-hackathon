@@ -1,0 +1,32 @@
+{
+  "name": "@tomblabs/badges-sdk",
+  "version": "1.2.1",
+  "main": "dist/index.js",
+  "module": "dist/index.m.js",
+  "unpkg": "dist/index.umd.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    "require": "./dist/index.js",
+    "default": "./dist/index.modern.js"
+  },
+  "scripts": {
+    "build": "del dist && microbundle --tsconfig tsconfig.json --no-sourcemap",
+    "dev": "microbundle --watch --tsconfig tsconfig.json --no-sourcemap"
+  },
+  "keywords": [],
+  "license": "MIT",
+  "author": "Tomb Labs",
+  "devDependencies": {
+    "microbundle": "0.15.1"
+  },
+  "dependencies": {
+    "@coral-xyz/anchor": "^0.29.0",
+    "@solana/web3.js": "^1.91.1",
+    "isomorphic-unfetch": "^4.0.2",
+    "typescript": "^5.4.2"
+  },
+  "files": [
+    "dist"
+  ],
+  "description": "A simple SDK to interact with the Tomb Labs Badges program"
+}
